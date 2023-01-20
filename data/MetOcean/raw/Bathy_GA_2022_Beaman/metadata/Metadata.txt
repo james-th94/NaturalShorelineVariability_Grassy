@@ -1,0 +1,71 @@
+- Title: High-resolution depth model for the Bass Strait - 30 m
+- eCat: 147043
+
+
+- Dataset CUSTODIAN
+  Geoscience Australia
+
+- Dataset JURISDICTION
+  Australia
+
+- Description ABSTRACT
+  The Bass Strait Digital Elevation Model (DEM) is a compilation of all available bathymetry data for the area of seabed between the coastlines of Victoria and northern Tasmania, extending approximately 460 km from west of King Island to east of Flinders Island. The Bass Strait is bounded by a continental slope incised with numerous canyons, including the prominent Bass Canyon on the eastern side. The region encompasses islands and exposed rocks, drowned paleo-shorelines and dunefields, fringed by a rugged coastline. Bathymetry mapping of the seafloor is vital for the protection of Bass Strait, allowing for safe navigation of shipping, improved environmental management and resource development. Australian Hydrographic Office-supplied ENC tile spot depths were used to develop the general bathymetry variation across the entire region. Shallow- and deep-water multibeam survey data reveal the complexity of the seafloor for the continental shelf and adjacent canyons which incise the western and eastern sides of Bass Strait. Airborne LiDAR bathymetry acquired by the Australian Hydrographic Office cover most of the northern Tasmanian nearshore and coast, with some coverage gaps supplemented by Landsat-8 satellite derived bathymetry data. The Geoscience Australia-developed Intertidal Elevation Model DEM improves the source data over the intertidal zone. Highly accurate photogrammetry coastline data developed for the Tasmania, Victoria and New South Wales coastlines, and Near Surface Feature data representing shoal features observable in aerial imagery, were used to improve the land/water interface of the numerous island and rock features. All source bathymetry data were extensively edited as 3D point clouds to remove noise, given a consistent WGS84 horizontal datum, and where possible, an approximate MSL vertical datum.
+
+- Dataset PURPOSE
+  This project aimed to develop a new high-resolution digital elevation model (DEM) for the Bass Strait at a grid pixel resolution of 0.0003-arc degree (about 30 m). A high-resolution DEM is a critical spatial dataset used to assist policy making, such as informing depth information for wind farm development. In addition, a new grid is required to improve the geomorphic detail about the location and spatial extent of seabed features for the Bass Strait and adjacent continental slopes. The new grid utilised the latest data sourced from ship-based multibeam and singlebeam echo sounder surveys, ENC tile spot depths, airborne LiDAR bathymetry surveys, satellite derived bathymetry data, coastline and near surface feature data.
+
+- Dataset AUTHOR(S)
+  Beaman, R.J.
+
+- Descriptive KEYWORDS
+  BATHYMETRY
+  MARINE
+  CONTINENTAL SHELF
+  ELEVATION
+  SRTM
+  DEM
+  LIDAR BATHYMETRY
+
+
+- Maintenance and UPDATE FREQUENCY
+  As required
+
+- Spatial RESOLUTION/SCALE
+  0.0003 arc-degree (~30 metres)
+
+- Spatial REPRESENTATION
+  Grid
+
+
+- GEOGRAPHIC BOUNDING BOX
+  N_LAT: -36.99
+  S_LAT: -42.00
+  E_LONG: 143.00
+  W_LONG: 150.00
+
+- Horizontal DATUM
+  World Geodetic System 1984
+
+- Vertical DATUM
+  Approximates Mean Sea Level
+
+- METADATA DATE
+  29 January 2022 (Version 5)
+
+- Legal CONSTRAINTS COPYRIGHT: 
+The content on this website is released under the Creative Commons Attribution 4.0 International Licence: https://creativecommons.org/licenses/by/4.0/
+ATTRIBUTION: “Australian Hydrographic Office, Geoscience Australia, James Cook University”
+
+
+- Use Limitation: 
+  This dataset is not to be used for navigational purposes.
+
+  This dataset is published with the permission of the CEO, Geoscience Australia
+
+
+
+- Data LINEAGE
+GRID RESOLUTION: 0.0003° (~30 m). TOTAL SURFACE COVERAGE: 348,000 km2. HORIZONTAL DATUM: WGS84. VERTICAL DATUM: Approximates mean sea level. DATA LIMITATIONS: AUSTRALIAN HYDROGRAPHIC SERVICE NOTICE: Not to be used for navigation. Certain material in this product are reproduced under licence by permission of The Australian Hydrographic Service © Commonwealth of Australia 2010-2022. All rights reserved. This information may not be copied, reproduced, translated, or reduced to any electronic medium or machine readable form, in whole or part, without the prior written consent of the Australian Hydrographic Service. GEOSCIENCE AUSTRALIA NOTICE: This Bass Strait 30m DEM incorporates data which are © Commonwealth of Australia (Geoscience Australia) 2010- 2022. The Commonwealth gives no warranty regarding the data's accuracy, completeness, currency or suitability for any particular purpose. This dataset has been compiled from a wide range of data sources of varying resolution and accuracy. These include multibeam sonar bathymetry, singlebeam bathymetry, point soundings from electronic nautical charts, LIDAR derived bathymetry, satellite derived bathymetry, plus data from the National Intertidal Digital Elevation Model and the Australian coastline polyline.
+
+  
+

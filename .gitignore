@@ -1,0 +1,9 @@
+# Tagged Image File Format
+*.tiff
+*.tif
+*.ovr
+*.adf
+*.xml
+*.xyz
+*.dat
+*.nit
