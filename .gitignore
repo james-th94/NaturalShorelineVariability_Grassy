@@ -7,3 +7,9 @@
 *.xyz
 *.dat
 *.nit
+*.shp
+*.dbf
+*.shx
+*.cpg
+*.prj
+*.csv
