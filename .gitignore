@@ -1,4 +1,4 @@
-# Tagged Image File Format
+# File Types to Ignore
 *.tiff
 *.tif
 *.ovr
@@ -13,3 +13,18 @@
 *.cpg
 *.prj
 *.csv
+*.png
+*.jpg
+*.qgz
+*.csv
+*.grd
+*.ldb
+*.d3d
+*.dia
+*.doc
+*.docx
+*.qix
+*.pkl
+*.pkl*
+
+manuscripts/
