@@ -26,5 +26,12 @@
 *.qix
 *.pkl
 *.pkl*
+*.geojson
+*.zip
+*.pptx
+*.pptm
+*.shp
 
 manuscripts/
+data/
+QGIS/

@@ -88,7 +88,7 @@ plt.rcParams["ytick.color"] = colour
 plt.rcParams["font.size"] = "14"
 plt.gcf().autofmt_xdate()
 
-fig = plt.figure(figsize=(8, 6))
+fig = plt.figure(figsize=(10, 6))
 ax = sns.boxplot(df[colNames], color="grey", fliersize=0)
 ax.plot(
     np.arange(0, len(colNames)),
@@ -104,14 +104,24 @@ ax.plot(
     label="Winter",
     lw=3,
 )
+# Summer Median RSL Positive and Negative SAM only
 ax.plot(
     np.arange(0, len(colNames)),
-    dfNeg[dfNeg["Season"] == "Winter"][colNames].median(),
-    c="royalblue",
+    dfPos[dfPos["Season"] == "Summer"][colNames].median(),
+    c="lightsalmon",
     lw=2,
-    linestyle="--",
-    label="Winter (SAM<0)",
+    linestyle="dotted",
+    label="Summer (SAM>0)",
 )
+ax.plot(
+    np.arange(0, len(colNames)),
+    dfNeg[dfNeg["Season"] == "Summer"][colNames].median(),
+    c="crimson",
+    lw=2,
+    linestyle="dotted",
+    label="Summer (SAM<0)",
+)
+# Winter Median Positive and Negative SAM only
 ax.plot(
     np.arange(0, len(colNames)),
     dfPos[dfPos["Season"] == "Winter"][colNames].median(),
@@ -120,18 +130,36 @@ ax.plot(
     linestyle="--",
     label="Winter (SAM>0)",
 )
+ax.plot(
+    np.arange(0, len(colNames)),
+    dfNeg[dfNeg["Season"] == "Winter"][colNames].median(),
+    c="royalblue",
+    lw=2,
+    linestyle="--",
+    label="Winter (SAM<0)",
+)
 ax.set_xticks(np.arange(0, len(colNames), 4))
-ax.set_ylim(-40, 40)
-ax.set_yticks([-20, 0, 20])
+ax.set_ylim(-50, 50)
+ax.set_yticks([-40, -20, 0, 20, 40])
 ax.set_xlabel("Distance Along Beach (m)")
-ax.set_ylabel("RSL(m)")
-ax.text(x=-4.2, y=-38, s="(Eroded)", color="k")
-ax.text(x=-5, y=35, s="(Accreted)", color="k")
-ax.text(x=-1.5, y=-50, s="(West)", color="k")
-ax.text(x=22.5, y=-50, s="(East)", color="k")
+ax.set_ylabel("RSL (m)")
+ax.text(x=-3.8, y=-48, s="(Eroded)")
+ax.text(x=-4, y=45, s="(Accreted)")
+ax.text(x=-1.5, y=-60, s="(West)")
+ax.text(x=23, y=-60, s="(East)")
 ax.grid(True)
-plt.legend(loc="best", labelcolor="dimgrey")
-plt.savefig(projDir + "data\\Plots\\All\\boxplot.png", dpi=600, bbox_inches="tight")
+plt.legend(loc="best", 
+           frameon = True,
+           labelcolor="dimgrey",
+           ncol = 3)
+plt.savefig(projDir + "data\\Plots\\All\\boxplot_v2.png", dpi=600, bbox_inches="tight")
+
+
+# %% Some statistics
+
+seasonal_diff = df[df["Season"] == "Summer"][colNames].median()-df[df["Season"] == "Winter"][colNames].median()
+quartiles = df.quantile([0.25,0.75])
+iqr = quartiles.loc[0.75] - quartiles.loc[0.25]
 
 
 # %%
