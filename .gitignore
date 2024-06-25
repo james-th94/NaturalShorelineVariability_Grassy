@@ -31,7 +31,7 @@
 *.pptx
 *.pptm
 *.shp
-
+# Folders to ignore
 manuscripts/
 data/
 QGIS/
